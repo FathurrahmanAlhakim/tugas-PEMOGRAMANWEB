@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakim</title>
+
+</head>
+
+<body>
+
+    <ul style=" text-align: center; border: 1px solid black; padding: 10px;">
+        <li style="display: inline-block; border-right: 1px solid black; padding: 0 40px;">Home</li>
+        <li style="display: inline-block; border-right: 1px solid black; padding: 0 40px;">Generate Link</li>
+        <li style="display: inline-block; border-right: 1px solid black; padding: 0 40px;">Transaction History</li>
+        <li style="display: inline-block; border-right: 1px solid black; padding: 0 40px;">Policy</li>
+        <li style="display: inline-block; border-right: 1px solid black; padding: 0 40px;">Logout</li>
+    </ul>
+
+    <div style="border: 1px solid white; padding: 38px;">
+    </div>
+
+    <div style="float: left; width: 28%; border: 1px solid white;">
+        <img src="/Users/ido/Desktop/Dafapa/Form/images.jpg" alt="GambarBarang" style="margin-left: 100px;"
+            width="180px" height="180px">
+        <input type="button" style="margin-left: 120px;" value="Upload Picture">
+    </div>
+
+
+    <div style="float: left; width: 69%; border: 1px solid white">
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Title Here : </td>
+                    <td style="border: 1px solid rgb(255, 255, 255);"> <input type="text"></td>
+                </tr>
+                <tr>
+                    <td valign="top">Description : </td>
+                    <td style="border: 1px solid white; width: 80%;">
+                        <textarea style="resize: none; height:70px; width: 170px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Number : </td>
+                    <td style="border: 1px solid white;"> <input type="number"> </td>
+                </tr>
+                <tr>
+                    <td>Bank : </td>
+                    <td style="border: 1px solid white;">
+                        <select>
+                            <option>BCA</option>
+                            <option>Mandiri</option>
+                            <option> BRI </option>
+                            <option> Bank Lain </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Holder : </td>
+                    <td style="border: 1px solid white;"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td valign="top">Transaction : </td>
+                    <td style="border: 1px solid white;">
+                        <div>
+                            <input type="number">
+                        </div>
+                        <div>
+                            *if the Transaction is for 3 person, Choose 3 form the drop-down list
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Send to Mobile Phone
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Send to Email
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Send to Mobile Phone :
+                    </td>
+                    <td style="border: 1px solid white;">
+                        <input type="number" placeholder="Number Telphone">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Send to Email : </td>
+                    <td style="border: 1px solid white;">
+                        <input type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="border: 1px solid white;">
+                        <input type="button" value="Generate Nobr Link" style="background: Blue; ">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
