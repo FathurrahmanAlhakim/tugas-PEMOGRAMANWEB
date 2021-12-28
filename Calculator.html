@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 1 Calculator</title>
+</head>
+<body>
+  
+  <input id="bilanganPertama" type="number"><br>+<br>
+  <input id="bilanganKedua" type="number"> <br>  <br>  
+  <button onclick="cetakHasil()">Cetak</button><br>  <br>  
+  <p id="hasil"></p>
+
+  <script>
+    function cetakHasil() {
+      let bilanganPertama = document.getElementById('bilanganPertama');
+      let bilanganKedua = document.getElementById('bilanganKedua');
+      let hasil = document.getElementById('hasil');
+
+      hasil.innerHTML = Number(bilanganPertama.value) + Number(bilanganKedua.value); 
+    }
+  </script>
+</body>
+</html>
