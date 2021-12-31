@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>contoh</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="row">
+        <form class="col-12">
+          <div class="row mb3">
+            <label class="col-3" for="name">Nama</label>
+            <div class="col-9">
+              <input type="text" id="name" name="name" placeholder="masukkan nama anda" maxlength="30" required>
+            </div>
+          </div>
+          <div class="row mb3">
+            <label class="col-3" for="email">Email</label>
+            <div class="col-9">
+              <input type="email" id="email" name="email" placeholder="emailanda@mail.com" required> 
+            </div>
+          </div>
+          <div class="row mb3">
+            <label class="col-3" for="jam">Jam keberangkatan</label>
+            <div class="col-9">
+              <input type="time" id="jam" name="jam" required>
+            </div>
+          </div>
+          <div class="row mb3">
+            <label class="col-3" for="tujuan">Tujuan keberangkatan</label>
+            <div class="col-9">
+              <input type="text" id="tujuan" name="tujuan" placeholder="tujuan anda" required>
+            </div>
+          </div>
+          <div class="row mb3">
+            <label class="col-3" for="jumlah">Jumlah tiket</label>
+            <div class="col-9">
+              <input type="number" id="jumlah" name="jumlah" placeholder="jumlah tiket 1-10" min="1" max="10" required>
+            </div>
+          </div>
+            <button type="button" id="button" onclick="validasi()">validasi</button>
+            <p id="paragraf"></p>
+          </div>
+        </form>
+      </div>
+    </body>
+</html>

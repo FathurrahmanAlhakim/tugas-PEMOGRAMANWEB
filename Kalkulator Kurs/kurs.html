@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kurs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <fieldset class="field-kurs">
+        <legend>Kalkulator Kurs</legend>
+        <table class="tabel-kurs" border="1">
+            <tr>
+                <th>Masukan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="nilai" onchange="hitung_dolar()"></td>
+                <td><select name="uang" id="matauang" onchange="hitung_dolar()">
+                    <option value="dollar">Dollar US</option>
+                    <option value="d_Singapore">Dollar Singapore</option>
+                    <option value="ringgit">Ringgit Malaysia</option>
+                    <option value="yen_jepang">Yen Jepang</option>
+                    <option value="euro">Euro</option>
+                    <option value="riyal_arab">Riyal Arab Saudy</option>         
+                </select></td>
+                <td>
+                    <input type="text" id="hasil" readonly>
+                </td>     
+            </tr>
+        </table>
+    </fieldset>    
+</body>
+<script src="assets/js/kurs.js"></script>
+</html>
